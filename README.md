@@ -73,5 +73,5 @@ Below is an example of a payment request using Paygent's API:
 - Check for possible errors and handle them appropriately.
 
 ## Description
+[![Watch the video](https://raw.githubusercontent.com/nvdong1108/payment-gateways-paygent-japanese/main/docs/z6312908401809.jpg)](https://www.youtube.com/shorts/BYO-8dUqwxk)
 
-[![Watch the video](https://www.youtube.com/shorts/BYO-8dUqwxk)](https://www.youtube.com/shorts/BYO-8dUqwxk)
