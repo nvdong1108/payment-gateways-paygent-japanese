@@ -4499,3 +4499,665 @@ fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
 masked_card_number=************0000
 card_valid_term=1229
 out_acs_html=
+2025/02/13 08:30:38 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:30:39 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=be0d3f36-e7f7-489f-844d-24e24b859ba4
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="be0d3f36-e7f7-489f-844d-24e24b859ba4"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30FD2DF78755ED078E258BAE6261812F08CCB1A546ACD0B7278FF527970A393E53D3221C76189A03862DF48C76972B030BB40E1A6AA94C03478FF8C053D884D798"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="DEC5F6C1718709D7AF220FB726B591BA28C25841939C81A02C209C85D9E108DA18E45EBF66804391FCB3E4DA60B8C93563ACC5F2BFF96F6577460C1B98401E9C252BEF98ECD9995BF10C6441168996628849C486392A0B66F2685C726C43807A52D1A858BB487563C7DC3E6816E94AEE05436A72991E428A81987BED52053CA7114D0E74386547E8BD81E300ADEFB914B3E5507424B1E586B6D2A212EE25BCF1DB9881761C4254F61BC8D0268E3D4BFC8C42CBF06AB4B981D2016925AB3857DE3F6488F360E580241D93183A4894590EEBDB4EE133F13B08BCF877837312B347F1DF84F3C9B382856081D4BF27F5342C919BC15196AF15D32DE756136EB13C9D1437F9ACD87004B1735C11762BD6A4EBCADA7D7C894BA59C6682023B794B09E2007738C076CCA0AA59BB8F248EF2047E464DCCDF8964DD50A066F587654C4B77756A8FCADACB15BF7A2347E12D38B0CEFEF7F75C9EF6F58AD64E81E60538DE932E4CD9F5C78AB590FF0BE1716219BAA076FF4B2163DC8807CDFF76364DA5668E98721CC217F68166FE6A09FA5AEA4C03A6B0FF1C1A7F08473038026DE658E779"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:30:41 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=be0d3f36-e7f7-489f-844d-24e24b859ba4&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_QJKyiZuQ3brkH4yWmQxI2otxxL&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:30:42 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928659
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:32:01 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:32:02 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=bde5d773-73a8-4c87-8af9-0a1a126e3326
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="bde5d773-73a8-4c87-8af9-0a1a126e3326"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30FBFB7394D4949E7EE8C6116108E0DC08912CA60B33B4D9FBE7B3E6CD5012401E86E4B75152C09E7309B6FB9E7EEA56B95B621ABDA66FF3C890F58976D5F34AB4"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="743AB07146FC2DB64414B9250D5CECB84CF7F82EB6A93FBDDCAC83306A0D5002F1C58D1FA949F4B041509E441715EA1EA60C5D028847A678ACCB1918DD62BD7D242F49A11E836352D7B7222AD63F46B72B5F9190BBC5C8D3F52C5900DAE7E9D8E889683779CE91AAF8EEE04938C71355A8E1A4C54D3070E9B6E97E0EF5EBBEC37B2CA084CD42358E21B84B3F2D50476B7971EB14BC0EF55508F9679D5ABC0F38CD2DCF293C88D6EE9B2944936EE014C3F3BA90FE956324B4F3F47AE0F3F57BD1822723715A86969518765AAB7A3B9BF5D6E85292D1766CC2AD92B3F5268396353217825C72731DE48D972B27334568F69F64B0E1A3FD6E6FF5FF49CBA3B0C3DCF025574080AF77BD2DB14CADE655403F8F1B6B3495A50D234AB9CEF725BAC41BA3679DBF3B35F01A2FFA6150F74679FAA2D7E53783591056F14940B5821FCE322A96C114E762583C193BE0D4CB08B6EE178468178B9ED2DED43F438385FFE846313B329FA98170F712E33999105E0186C33F230BC1383A59D11E2279BA33DA069C6EDFCAAE58FF34A8D100635D55DDB53AB23FBB7A324E6FAB796F5F8C526AA9"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:32:14 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:32:15 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=604e25ef-a195-4c8e-835b-b018ea9cab55
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="604e25ef-a195-4c8e-835b-b018ea9cab55"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="306D82F1ACD39AECDC65FBE4A1551F7369B56DA15C2014226B5A2AF80DA415FACB405207D8C81832EB99D99557AB17C195BAD4A0E7A4FEB50AA853A9E637B1D5D3"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="9819F37D3638F98010328B7E9E521903A5739AC97B39BD18B2ABD10513E4240C78687680FF5DEE36B5F9783DB5728C33B81589301A80307B88634689D86B3275F7C45B232A098D758F9F7DF7F134D0B78F665E84AAC7E96ABACE2C0A8F1694F8DBD6528449E01526EAE96EA5F644362361142CCA5894C337B95B8BF79D6A8F94214327F04F9411C142D5BCC4CEDC5C1376F32F8EA97C5595D565303F5466244D1C983DC9E19570EF65C83CC7B31550A3E74BC5BCA8506685E3D234EAF133A7982BB441DA903A220231B150751FB6D4C050979F0A4D3EBA789D26E863713C2A52BE370CEBFA6B5103D87FE1861C0A9F62132C15E35E88DB8D0A13D69FF878F792E6EB65165116EE2C6210CB59423E94A861B3C9162ED3066F8F8BDF4EAF6AEC5AB3057557941F785F2C667F122520B1CA374082D6FE1891513155286FE3CFDE121EEB720FD49D26531C79BEB10E240A5290BF72CCFEBA7FCFFFA1002B9FEF35F7ED0C48DF625DE0DB8B69CEE4C32378EC7DDA511235ECB738175D69CA7E7A247139E1D0221A279CCC0FE1E09C39C6845DF09DE0FE4C2BDACDB1B7D5E117DB3DDD"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:37:37 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:37:38 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=4eff6507-cfd9-4a13-ac2d-1f779f08ae5b
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="4eff6507-cfd9-4a13-ac2d-1f779f08ae5b"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30FCE52D1FA77AFA39B45AAAAB0EBD58064F611AFB4F1DF6372B06095AD6276EF6A86D1D98FBBB1F0DAD4CEE6447DE56F0C3749B7A3CB4B33EB7C3BF6291FFBC45"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="3AAC1EF981B84944DECC944B154D2C6CF06242482FD3851B200B9D73CEE2EFB3DDD9D3D2A15B4ADAFDB1C8A9013597179C2BB5AC67B5B453B5D54345A5420A80DBDC9D5B964C9D13ADBE22E31F5CB4C1D709FEA22772B6327A53BD8740CD4E32272168C0D867C72C399107F2B9091A8EDFFB37D196CCC438CBD5C4CAECD02AD7D20F4FA756192487164B30845CFD9780D6CA2833001187DF9F9449206A0849A1D5AD20FE48BAC4CE7DE3AE79E0BDD0FE60B84EA4A24B74AFE4E42FFCF495F1C609667C41D712F556B2B58D46FD2FB50F3A571A2F0A9271844E3001FE973F12490B0DDF86813BA2C3C374D8B7B6324269DF7CEE9868178C2441042D6EC49EAF109D3A230652379C265CEE8798BFBCE92F0420F941D66CBB4E59020198F060EE72D440D7E8563DFB74EB98E4597E58D4DDA00DED56CC68A7DAE7D9FBE252EA5EB88EFE693A8D3F7D680E178B9BF874BFF8EB43DEAC24FE4CAD4A071EB6E87FEE722AF16A3887FFA5F2180DC903DB39234DF04AFE2FFC5DD824466078F67B556DFBCE5EBDA828FC18F88530118CB6DF86E8884846720ADBF420381EE0B2B26D8D56"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:37:41 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=4eff6507-cfd9-4a13-ac2d-1f779f08ae5b&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_iSAb32nsngjmCevkFx3lqRR5ii&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:37:42 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928743
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:38:04 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:38:05 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=43b83fe5-7100-4e98-8fb3-3f5e4d56f0c8
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="43b83fe5-7100-4e98-8fb3-3f5e4d56f0c8"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30AD924ED794D4AF8FAC796B5B20856803C630E33C3D2A6AB7974ECF29979DD271E2B4BC0F25CFD5E0EDEADDD5DC0C0E7B76DECB33EE4297EC1F7330982736586E"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="4A6F8CC1D27FBDDD318FB6EA640626224CBE8B9D1EBB7BE8041779DB63D1067CCCAC401EDE9986365140C8C51D856688C835AA116E98F9D1F1E0E50BEC3A71834B8D9A68BCFE771CC9E2980E0950344E766DD5F12FEE7ABD566092E1C13F0CD796A7434880F7AE93DBF23953D02C330335529D0FDE327457338DD1AE4C16AA187C720A5297D9BBF519F115660BCBC80FCA91139E55D9C402826914D87058568BA1D8CCEF0B0F6F9175E5B90E8F39F9193D4E95B1678E1412E541084C85B4B49B923FDFB313E19E193954EB00007E4990CB84C41238D2D416951DE157B9915D2B2787BDE575F2153A9F89E01938F879DD1B577FF76D804FD00A4E4C4732823533CEF133210AE94A8F9F8BC009B1085EF467CAD2F9ADCCF4F12692E630EA1010F4810E11124D4110EBC0F23D9C5925923FA5C6592FA32C884C408362A554A606AF607A7E376D73C014D4DE97606A146A9575B0CED16DBD420DB010C3AD12BED938439689FFC6E7A4A88D1178454C33D0F66CEB9F0C67B3C312AD10A4C3BA278036A8C1A5F1E349A12D7350E37E5301D13A043A37D76A7BAAA2321DC703905C0F1B"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:38:07 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=43b83fe5-7100-4e98-8fb3-3f5e4d56f0c8&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_rrKumRZv1ALsRhfhDaGDcxDiCI&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:38:09 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928746
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:38:46 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:38:46 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=cb35ff23-aef3-4816-998c-9ce59ab5de68
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="cb35ff23-aef3-4816-998c-9ce59ab5de68"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30CF732FB737DDD492847EA0540F208DD23853578EB0B05943C9D1341A20984B45F97D93DE8FB89D9654B8C737EA02566DA533AF018D2F46E77F861202969E982D"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="113F96DB8A2B28123C5374748167E52FE4C907506E97791A01F61F6F555F59D2F568EE1FDF468111AA8B5935991CDDA8CA77F6BA483DD992B360541DD72886C9159632E4B3BF11D6EDC5F3A670B27E9289927D9842AFC8D5AFDF8C12863E2616587B1743E46CB4A35A7528BCF53E646A0CAE462A86A0B93F93D5D4FFFB5F16F624FA1A7250D96E5B5B4607AC98060C743E3D46A281167A1473BF9072FD515AF8BC1D1116F496263D7A1D6055B7230AC310B61A79F4F67AB3CA22000EA096DCE293B2576B546F8D4BF26F0081FE8CD9CB62D1EC914B64844939BCA89F50384BD2798B2D017445EEDE990D31B23F6537E33553C868177AFAD73DBF04198FF04D49FCFD2B3D9DF605A04BEC39A161D3E644A315103082456CB46503E43DCB1C1BCB59F09C99B8C4B0555D4F6812BC39E376AF7F0B811E9A9BAB91401415063B341BE8586B2277306EBB82E35F7581B0EFB39F88EB06E744A5FBA0B90962222E44025308884BF8E2403F1AD0B1FD5E62FEEAC325D21D0285F73EB5F0F6CBBF0BFEED83B814BF36B70EB5D8669166FEF844744C878934EC69E30777468066F588FCDC"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:38:49 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=cb35ff23-aef3-4816-998c-9ce59ab5de68&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_40PtoeX1bgd8GjvvdN5MG7ZZis&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:38:51 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928750
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:41:12 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:41:12 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=afa2d1a7-9cd4-4449-95d3-e3d8bd9ce172
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="afa2d1a7-9cd4-4449-95d3-e3d8bd9ce172"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30C50EDF6C7FBBFB26083D255DC1BC76A95090CBBE49349D4598AFA2F166E141FBEB5BF12352D9F0EC75A55E62A075187803C5D9B34DA5C1F9EBCD9F0784E964E5"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="291C61346FB18A796FE0DAB55A07588A4AA25AB656FC09F96D8180E052FBA8AC79EF4ACEC9EF52C70259A17063D37D3975C555B40EC80618C029BC51A2B37DFFB79D6C5F35082724D79324DBC064B6B576C2C54EFD9D5A06685C131BEADE6837E1F6717F741A834F90DA0394EE765ADC0BD5F679D36834BE4DBEDA5DB915234F159999F1D480B7061E0B8621D64AF6AC0368E2BD6701C4C7E7C982F931ACDA5C2FA290ECB94E651F80B371BE01A4C81701D486A4CB9D07DAB9518A918715BD68E18740E7FA7551409537B0745A19EBEF1A7FF40F7B637BAB4D2F4E39C95FE316132BEFC6DE079536E02E13A2CC663A8CE27AC4605435B881B2CD67EE3571F467060F82E8F33F1C40F00E05967BD02983F55D30862968A7D26650BFB627C631CF3B41BD766B69E34C0C2EBAF0DCC84D0CF36B032B710E84C5CCB3F94B02FE0E78417867E8D3AECCE8FB6A4CE7F9335ADCC940FB3281461C50223AC19333AFB882297128E4C76508FA5CDF8EA7067CA3C88391E0E7EFD4D6C6D346624C86A056E117DB592DB1AC8C91219F9DA598B1648761835C08BEFAA32161899C25929C3103"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:41:15 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=afa2d1a7-9cd4-4449-95d3-e3d8bd9ce172&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_NWEscLxU4m1iJth6Rae0uiaTna&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:41:16 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928778
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:43:23 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314010&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:43:24 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=9f613a85-56e3-412a-acc5-eb5f7d8b442d
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="9f613a85-56e3-412a-acc5-eb5f7d8b442d"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="30F172E4262A2C19F93A2D7887BED9ADC8BB80AD53B0C069110E0306AAE65C8EAD92726F7403007DDC2723362943B52F21DB5B941283D819837E371B4309F69B19"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="58A63814113BD7BDAD746E9BF7C76D024349BDB51A865E5FD04FC1D92AA61C0556C7A499D4420F92E3706BB6CD3C7AC1499CEA5B076DDFC373A3B37B7EC0F0EF736E023624C2BCC9B4B3438534C39EBB2637ADBFDA67DD0B786EB7864AC255B0D140D114305930917FFC62A354AEFC9781886AD873CD592C7DDC5D874A6008170BB4903945E52CD383A7CDF5FDB3E2CA5363827531AAD685185D39BB6CF904BB9FCEA81B2F582F10B91020B23C8404F1B3DE76CA7852D1590348C3C7DD6934E6A5DAB24689CF6A2DD868C328D9933B8C042F6E16B52C89B5F4AB25922FB356E75513A69097F258F266A20C90D99F7CC894485A2E6090ED6FBFE2C796EAAC9D3266FDC543AC1F6A3F81E6D4944A92FF5DF2A1B1067B607DF5B41627C0656E9171381F42E6EC52B89EB0FA755BBA24E3B2FEC99C056E29592BC98973093982D69630FC7705231E2EF0A2532903CFE16007D8570106A69E89129A490059B2C613EE80E492C651E503189FE95E764A3BA75BEE922834F48BDFE47A7D3F805E533E66F57D5BF74B340D41AB5F5FA832DE56D3E23DD0E1858F438DEEA158D322DB61E5"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:43:26 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=9f613a85-56e3-412a-acc5-eb5f7d8b442d&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_MhK6gGgYaarjR0KgGtpctB2ucS&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:43:27 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928787
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=
+2025/02/13 08:51:55 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_version=1.0&stock_card_mode=1&payment_amount=314060&payment_class=10&merchant_name=direct&merchant_id=39499&authentication_type=01&term_url=http%3A%2F%2F192.168.0.70%3A8090%2Fapi%2Fpaygent%2Fresponse_term_url&telegram_kind=450&connect_password=eNFpmbSaGjn&trading_id=20250212132738345&connect_id=test39499&card_set_method=customer&customer_card_id=14363077&customer_id=1234567&3dsecure_use_type=2
+2025/02/13 08:51:55 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+card_brand=VISA
+acq_id=50001
+3ds_auth_id=72eb605e-6ffd-4431-b538-3d6dfd2bdd5e
+issur_class=0
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+issur_id=99664
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+out_acs_html=<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv=content-type content="text/html; charset=utf-8">
+<script type="text/javascript">
+	function OnLoadEvent() {
+		document.submitForm.submit();
+	}
+</script>
+</head>
+<body onload="OnLoadEvent();">
+	<form name="submitForm" action="https://if-r-auth-api.ps.paysec-3dssvgw.com/v1/brw/complete/" method="POST">
+		<table>
+			<tr>
+				<td><input type="hidden" name="userId" value="1PGX-PR1-0-ESXA"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSMerchantTransID" value="72eb605e-6ffd-4431-b538-3d6dfd2bdd5e"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threeDSNotificationUrl" value="https://sandbox.paygent.co.jp/n/threeds/result_res"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="keyAlias" value="keyalias1PGX"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="messageDigest" value="3046DB1CE0992762E7FEF392CC09C71944C2A4F43E4BCC195887E6EC4DB5EB713817BF8B5EAC8B4D93872442643C0A5F65FA73D6CA4E6120AE2B649C5DDAF3B9F5"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="threedsAuthenticationData" value="E5A0013616AFF70D7E6436BDB01BCE677402759350E381199439A62E9B8C3F633F80C25F152E3BBAA9EF20D4574FD827051F82961C00D0363B928B7CE1DFC9DFC5E307C398CCCF1A3F4E7AD58A14A8AC66A4D9BDD81FCC1FB69F775368FD74234813EB24A4E0A9950B2DEBDC5F10E6F3611E1477A808FD5773E69CB1A347A83CF6EE4FD703E87D8D1A75A36D61DE39017AA3E2B316A0D35784759DB9FAC7B2DBEB828EACA5007CFCF06309F0AA8A9A4AF3B338BBD9F6B2E78E5CD0379961E275732E442FA707C0F6F976DA5A6BB827BF715C348858DF6572A2F11BCE8F2C2C74A09B68C7F514F5970B8B8AB95A14AB9E3CEDC2E664DE1F8AB086A9A0EC2E28EF35C9E0D123A6B90EAAC3D0B2F41ADA43F5562DE2F1945909BF71D435FF2D5BCE4693DF4C2582A1822A5E1A92ADE0AE402CCA936054BDB6B5FD5F38624DF0B599498B4F5247A9B227A84E3E50F5282BEA2D3C8FD9CE78EF93D205B34CE7CAEC698F3D7F2E4EF29863926B7ED1F8245104F28065F33E51D027CECA765B19146DD7673AB3862C0D62C66F82CC190E9272D58CECF6EFC7D581D34D97593D4B4FBF4C"></td>
+			</tr>
+		</table>
+		<noscript>
+			<div style="text-align: center;">
+				<h2>
+					3Dセキュア2.0認証を続けます<br>ボタンをクリックしてください。
+				</h2>
+				<input type="submit" value="OK">
+			</div>
+		</noscript>
+	</form>
+</body>
+</html>
+
+2025/02/13 08:51:58 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender request: telegram_kind=020&3ds_auth_id=72eb605e-6ffd-4431-b538-3d6dfd2bdd5e&connect_password=eNFpmbSaGjn&telegram_version=1.0&trading_id=20250212132738345&connect_id=test39499&card_token=tok_DSoR2dJ8tGgnp7tmgl3RpKpt4B&payment_amount=314010&payment_class=10&merchant_id=39499&3dsecure_use_type=2
+2025/02/13 08:52:00 DEBUG jp.co.ks.merchanttool.connectmodule.util.HttpsRequestSender response: 
+
+result=0
+payment_id=44928838
+trading_id=20250212132738345
+issur_class=0
+acq_id=50001
+acq_name=NICOS
+issur_name=UFJｶ-ﾄﾞ
+fc_auth_umu=
+daiko_code=
+card_shu_code=
+k_card_name=
+issur_id=99664
+attempt_kbn=
+fingerprint=7VLpFfrajHjemNjrOqPCd69VSIN33g0wi6kxPslj4nk8Ut9uS9AEGoNnex2ZUqid
+masked_card_number=************0000
+card_valid_term=1229
+out_acs_html=

@@ -32,30 +32,29 @@
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
         <div class="mb-3">
             <label for="cardNumber" class="form-label">Card Number</label>
-            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456"
-                   value="4566000000000000" required>
+            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
         </div>
         <div class="mb-3">
             <label for="cardName" class="form-label">Cardholder Name</label>
-            <input type="text" class="form-control" id="cardName" value="BAVYA" required>
+            <input type="text" class="form-control" id="cardName"  required>
         </div>
         <div class="row">
             <div class="col-md-3 mb-3">
                 <label for="expiryMonth" class="form-label">Expiration Month</label>
-                <input type="number" class="form-control" id="expiryMonth" placeholder="MM" value="12" required>
+                <input type="number" class="form-control" id="expiryMonth" placeholder="MM" required>
             </div>
             <div class="col-md-3 mb-3">
                 <label for="expiryYear" class="form-label">Expiration Year</label>
-                <input type="number" class="form-control" id="expiryYear" placeholder="YYYY" value="29" required>
+                <input type="number" class="form-control" id="expiryYear" placeholder="YY" required>
             </div>
             <div class="col-md-6 mb-3">
                 <label for="cvv" class="form-label">CVV</label>
-                <input type="password" class="form-control" id="cvv" placeholder="***" value="111" required>
+                <input type="password" class="form-control" id="cvv" placeholder="***"  required>
             </div>
         </div>
         <div class="mb-3">
             <label for="amount" class="form-label">Amount</label>
-            <input type="number" class="form-control" id="amount" placeholder="100" value="314010" readonly>
+            <input type="number" class="form-control" id="amount" placeholder="100" >
         </div>
         <div class="d-grid">
             <button type="submit" class="btn btn-dark" onclick="submitPayment(event)">Pay Now</button>
@@ -101,7 +100,18 @@
             cvv: cvv,
             amount: amount
         };
-        debugger
+
+        let popup = window.open(
+            "",
+            "_blank",
+            'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=900, height=520, left=500,top=200'
+        );
+
+        if (!popup) {
+            alert("The browser has blocked the popup. Please enable popups to continue.");
+            return;
+        }
+
         $.ajax({
             url: "/api/pay",
             type: "POST",
@@ -112,29 +122,21 @@
             async: true,
            success: function (data) {
 
-               let popup = window.open(
-                   "",
-                   "_blank",
-                   'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=900, height=520, left=500,top=200'	);
+               popup.document.write(data.outAcsHtml);
+               popup.document.close();
 
-               if (popup) {
-                   popup.document.write(data.outAcsHtml);
-                   popup.document.close();
-
-                   let checkPopupClosed = setInterval(function () {
-                       if (popup.closed) {
-                           clearInterval(checkPopupClosed);
-                           console.log("Popup close...");
-                           // saveCardHandler(result);
-                       }
-                   }, 1000);
-               } else {
-                   alert("The browser has blocked the popup. Please enable popups to continue.");
-               }
+               let checkPopupClosed = setInterval(function () {
+                   if (popup.closed) {
+                       clearInterval(checkPopupClosed);
+                       console.log("Popup close...");
+                       // saveCardHandler(result);
+                   }
+               }, 1000);
             },
             error: function (xhr, textStatus, errorThrown) {
                 alert("The server is busy. Please try again later")
                 console.error("The server is busy. Please try again later");
+                popup.close();
             },
             complete: function() {
                 document.getElementById("loadingSpinner").style.display = "none";
